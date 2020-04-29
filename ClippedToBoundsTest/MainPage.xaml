@@ -1,0 +1,18 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="ClippedToBoundsTest.MainPage">
+    <AbsoluteLayout>
+        <!-- Place new controls here -->
+        <StackLayout VerticalOptions="Center" BackgroundColor="Blue"
+                     Opacity=".75" IsClippedToBounds="False"
+                  
+                        AbsoluteLayout.LayoutBounds="0,.7,1,0.75" 
+                     AbsoluteLayout.LayoutFlags="All"
+                     Margin="8" Padding="40,0,40,0">
+            <Frame CornerRadius="30" BackgroundColor="Red" Margin="0,-20,0,0" IsClippedToBounds="False"
+                   VerticalOptions="Start" HorizontalOptions="Center" HasShadow="False">
+                  <Label Text="A" FontSize="Default"/>
+            </Frame>
+            <Label Text="Some more stuff in here"/>
+         </StackLayout>
+    </AbsoluteLayout>
+</ContentPage>
